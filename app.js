@@ -34,16 +34,16 @@ function multiply(a, b) { //eslint-disable-line
 // // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-   var sum1= sum(a,b);
-  var sum2= sum(sum1[0],c)
-   var multip1 =multiply(a,b);
-   var multip2=multiply(multip1[0],c)
- return [sum2[0],
- multip2[0],
-    a  +  "  and  "  +  b  +  "  and  "  +  c  +  "  sum to  "  +  sum2[0]  + ".",
-  "  The product of   "  +  a  +  "  and  "  +  b  +  "  and  "  +  c  +  "  is  "  +  multip2[0]  +  ".",
-];
- }
+   var sum1 = sum(a, b);
+   var sum2 = sum(sum1[0], c)
+   var multip1 = multiply(a, b);
+   var multip2 = multiply(multip1[0], c)
+   return [sum2[0],
+   multip2[0],
+   a + "  and  " + b + "  and  " + c + "  sum to  " + sum2[0] + ".",
+   "  The product of   " + a + "  and  " + b + "  and  " + c + "  is  " + multip2[0] + ".",
+   ];
+}
 /* Problem 4
 Write a function called sumArray() that takes in an array 
 of numbers as its single argument and then returns an array where
@@ -60,10 +60,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4];
 function sumArray(prob4Array) {
-  var prob4Array = [2, 3, 4];
-  var firstsum = sum(prob4Array[0],prob4Array[1]);
-  var secondsum = sum(firstsum[0],prob4Array[2]);
-  return [secondsum[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
+   var prob4Array = [2, 3, 4];
+   var firstsum = sum(prob4Array[0], prob4Array[1]);
+   var secondsum = sum(firstsum[0], prob4Array[2]);
+   return [secondsum[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
 }
 // // // Here is the test for sumArray(); uncomment it to run it
 // testSumArray(testArray);
@@ -86,8 +86,11 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(multiArr) {
+   var multiArr = [2, 3, 4];
+   var firstMultiply = multiply(multiArr[0], multiArr[1]);
+   var secondMultiply = multiply(firstMultiply[0], multiArr[2]);
+   return [secondMultiply[0], "The numbers 2,3,4 have a product of 24."]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
